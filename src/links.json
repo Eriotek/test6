@@ -1,0 +1,24 @@
+{
+  "links": [
+    {
+      "title": "Slack",
+      "Links": [
+        {
+          "name": "Karuzela",
+          "link": "https://karuzela.slack.com"
+        },
+        {
+          "name": "N&B",
+          "link": "https://newsbiztvn.slack.com/"
+        }
+      ]
+    },
+    {
+      "title": "Sii",
+      "Links": {
+        "name": "Mail",
+        "link": "https://mailex.pl.sii.eu/owa/#path=/mail"
+      }
+    }
+  ]
+}
