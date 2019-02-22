@@ -1,35 +1,38 @@
 import React from 'react';
 
-export  default class List extends React.Component {
+export default class List extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {
-      time: new Date().toLocaleString()
-    };
+      links: [],
+    }
   }
 
   componentDidMount() {
-    this.intervalID = setInterval(
-      () => this.tick(),
-      1000
-    );
+    fetch('./links.json')
+      .then(links => links.json())
+      .then(x => console.log(x))
+      .then(data => this.setState(data))
+      .catch(e => window.alert(e));
+
   }
 
-  componentWillUnmount() {
-    clearInterval(this.intervalID);
+  ListComponent() {
+
   }
-
-  tick() {
-    this.setState({
-      time: moment().format('HH:mm:ss')
-    });
-  }
-
-
   render() {
+    // const {links} = this.state;
     return (
-      <div className="app-clock">
-        {this.state.time}
+      <div>
+        {this.state.links.map( list => {
+          <div>{list.title}</div>
+          {list.links.map(link => {
+            <li>{link}</li>
+          })}
+
+        })}
+
       </div>
     );
   }
