@@ -2,7 +2,7 @@
   "links": [
     {
       "title": "Slack",
-      "Links": [
+      "links": [
         {
           "name": "Karuzela",
           "link": "https://karuzela.slack.com"
@@ -15,10 +15,16 @@
     },
     {
       "title": "Sii",
-      "Links": {
-        "name": "Mail",
-        "link": "https://mailex.pl.sii.eu/owa/#path=/mail"
-      }
+      "links": [
+        {
+          "name": "Mail",
+          "link": "https://mailex.pl.sii.eu/owa/#path=/mail"
+        },
+        {
+          "name": "Portal",
+          "link": "https://siiportal.sii.pl/+CSCOE+/logon.html"
+        }
+      ]
     }
   ]
 }

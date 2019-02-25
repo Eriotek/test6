@@ -2,11 +2,11 @@ import React from 'react';
 import './clock.css';
 import moment from 'moment';
 
-export default class Clock extends React.Component {
+export class Clock extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      time: new Date().toLocaleString()
+      time: moment().format('HH:mm:ss')
     };
   }
 
