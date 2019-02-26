@@ -1,0 +1,31 @@
+.notes {
+    display: flex;
+    flex-direction: column;
+}
+.note {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px;
+    width: 25rem;
+    height: 20rem;
+    background-color: #DEC6FB;
+}
+
+.belka {
+    height: 3rem;
+    background-color: #A542FB;
+}
+
+textarea {
+    background-color: #DEC6FB;
+    border: none;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+    resize: none;
+}
+
+textarea:focus {
+    outline: none;
+}

@@ -1,14 +1,17 @@
 import React, {Component} from 'react';
 import './App.css';
-import {Clock, List} from './component';
+import {Clock, List, Notes} from './component';
 
 class App extends Component {
   render() {
     return (
-      <main className="app-main">
-        <Clock/>
-        <List/>
-      </main>
+      <div>
+        <main className="app-main">
+          <Clock/>
+          <List/>
+        </main>
+        <Notes/>
+      </div>
     );
   }
 }
