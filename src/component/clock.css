@@ -1,8 +1,10 @@
 .app-clock {
-    color: white;
     margin: 0 auto;
+    padding: 1rem;
+    width: 50%;
     font-size: 40px;
     text-align: center;
     font-family: "Gill Sans Ultra Bold Condensed";
-    width: 50%;
+    font-weight: bolder;
+    color: black;
 }

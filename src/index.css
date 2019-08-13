@@ -1,16 +1,25 @@
+* {
+  /* outline: 1px solid black; */
+}
+
 html {
   height: 100%;
   font-size: 62.5%;
 }
 
 body {
+  height: 100vh;
   margin: 0;
   padding: 0;
   background: #212222; /* Old browsers */
   background: -moz-linear-gradient(45deg, #45484d 1%, #000000 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(45deg, #45484d 1%,#000000 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(45deg, #45484d 1%,#000000 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  overflow: auto;
+  background-image: url("./pobrane.jpg");
+  -webkit-background-size: cover;
+  background-size: cover;
+  overflow: hidden;
+
 
 }
 
@@ -42,6 +51,12 @@ input {
 iframe {
   margin: 0 auto;
   display: block;
+}
+
+footer {
+  position: relative;
+  top: -30rem;
+  left: 7rem;
 }
 
 .react-div {

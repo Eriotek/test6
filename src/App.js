@@ -6,7 +6,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        <main className="app-main">
+        <main className="app-root">
           <Clock/>
           <List/>
         </main>

@@ -9,7 +9,7 @@ export class List extends React.Component {
     };
   }
 
-  componentDidMount() {
+  componentWillMount() {
     fetch('./links.json')
       .then(data => data.json())
       .then(links => this.setState(links))
@@ -17,9 +17,11 @@ export class List extends React.Component {
   }
 
   render() {
+    const { links }= this.state;
+
     return (
       <section className="list">
-        {this.state.links.map((key, i) => {
+        {links.map((key, i) => {
           return <ul key={i}>
             <span className='title'>{key.title}:</span>
             {key.links.map((link, i) => {
